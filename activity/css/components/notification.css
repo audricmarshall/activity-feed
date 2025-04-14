@@ -1,0 +1,87 @@
+.notifications {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.3s ease;
+  position: relative;
+}
+
+.notification:hover {
+  background-color: #f9f9f9;
+}
+
+.notification:last-child {
+  border-bottom: none;
+}
+
+.notification-content {
+  flex-grow: 1;
+}
+
+.notification-content small {
+  color: #888;
+  font-size: 12px;
+}
+
+.notification-content p {
+  margin: 4px 0 0;
+  font-size: 15px;
+}
+
+.notification-content a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.notification-content a:hover {
+  text-decoration: underline;
+}
+
+.notification-actions {
+  font-size: 13px;
+  color: #999;
+  cursor: pointer;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+}
+
+
+.notification:hover .notification-actions {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.notification-actions a {
+  color: #888;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+
+.notification-actions a:hover {
+  color: #1e90ff;
+}
+
+.notification-actions i {
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.notification-actions a:hover i {
+  transform: scale(1.1);
+}

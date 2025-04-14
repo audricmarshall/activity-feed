@@ -1,0 +1,35 @@
+/* Your tabs CSS code here */
+.tabs {
+  display: flex;
+  padding: 20px 0;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #888;
+  padding-bottom: 10px;
+  font-weight: normal;
+  position: relative;
+}
+
+.tab:hover {
+  color: black;
+}
+
+.tab.active {
+  color: black;
+  font-weight: bold;
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
